@@ -1,4 +1,3 @@
-
 const Card = ({ period, title, timeframes }) => {
     const getCurrentHours = () => {
         return timeframes[period]['current']
@@ -9,7 +8,7 @@ const Card = ({ period, title, timeframes }) => {
     }
 
     const getPeriodSubstantive = () => {
-        switch(period) {
+        switch (period) {
             case 'daily':
                 return 'day'
             case 'weekly':
@@ -22,11 +21,9 @@ const Card = ({ period, title, timeframes }) => {
     }
 
     const formatTitle = () => title.toLowerCase().replace(' ', '-')
-    
+
     return (
-    <div className={`card card-${formatTitle()}`}>
-        <div className="container">
-            {/* <img className="icon" src={`/images/icon-work.svg`} alt="work icon" /> */}
+        <div className={`card card-${formatTitle()}`}>
             <div className="card-content">
                 <div className="card-upper-bar">
                     <h4>
@@ -42,7 +39,7 @@ const Card = ({ period, title, timeframes }) => {
                 </div>
             </div>
         </div>
-    </div>
-)}
+    )
+}
 
 export default Card

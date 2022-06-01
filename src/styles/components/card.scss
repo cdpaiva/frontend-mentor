@@ -1,11 +1,12 @@
 .card {
     color: $text-color;
-    // background-color: $lime-green;
-    // background-image: url('../../../public/images/icon-work.svg');
     background-position: top -10px right 15px;
     background-repeat: no-repeat;
     height: 215px;
     border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .card-exercise {
@@ -38,22 +39,8 @@
     background-color: hsl(195, 74%, 62%);
 }
 
-.container {
-    position: absolute;
-    width: 240px;
-}
-
-// .icon {
-//     position: relative;
-//     left: 70%;
-//     height: 25%;
-//     width: 80%;
-// }
-
 .card-content {
-    position: relative;
     padding: 1rem 1.5rem;
-    top: 35px;
     height: 180px;
     background-color: $dark-blue;
     border-radius: 0.5rem;
