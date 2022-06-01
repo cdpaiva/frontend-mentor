@@ -8,5 +8,6 @@
     @include response(375px) {
         grid-template-columns: auto;
         grid-template-rows: auto;
+        margin: 5%;
     }
 }

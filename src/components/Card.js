@@ -31,11 +31,13 @@ const Card = ({ period, title, timeframes }) => {
                     </h4>
                     <p className="options-menu">...</p>
                 </div>
-                <div className="main-content">
-                    {getCurrentHours() + 'hrs'}
-                </div>
-                <div className="sec-content">
-                    {`Last ${getPeriodSubstantive()} - ` + getPreviousHours() + 'hrs'}
+                <div className="phone-flex">
+                    <div className="main-content">
+                        {getCurrentHours() + 'hrs'}
+                    </div>
+                    <div className="sec-content">
+                        {`Last ${getPeriodSubstantive()} - ` + getPreviousHours() + 'hrs'}
+                    </div>
                 </div>
             </div>
         </div>
