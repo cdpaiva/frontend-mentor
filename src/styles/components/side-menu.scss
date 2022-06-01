@@ -3,6 +3,8 @@
     grid-row-end: 3;
     background-color: $dark-blue;
     border-radius: 0.5rem;
+
+    
 }
 
 .overlay {
@@ -11,10 +13,16 @@
     background-color: $blue;
     border-radius: 0.5rem;
     color: whitesmoke;
+
+    @include response(375px) {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .img-avatar {
     width: 75px;
+    height: 75px;
     border: 2px solid whitesmoke;
     border-radius: 50%;
 }
