@@ -1,0 +1,49 @@
+.side-menu {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: $dark-blue;
+    border-radius: 0.5rem;
+}
+
+.overlay {
+    padding: 2rem 1.5rem;
+    height: 70%;
+    background-color: $blue;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+}
+
+.img-avatar {
+    width: 75px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+}
+
+.pre-text {
+    margin-top: 2rem;
+}
+
+.username {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.interval-menu {
+    color: $pale-blue;
+    padding: 1rem;
+
+    p {
+        margin-bottom: 0.75rem;
+
+        &:hover {
+            color: whitesmoke;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+}
+
+.selected {
+    color: whitesmoke;
+    font-weight: 500;
+}

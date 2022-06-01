@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import SideMenu from "./components/SideMenu"
+import Card from "./components/Card";
+import dataSource from './data.json'
+import {useState} from "react"
 
 function App() {
+  const [period, setPeriod] = useState('weekly')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="grid">
+      <SideMenu period={period} setPeriod={setPeriod}/>
+      {
+        dataSource.map(card => <Card period={period} title={card.title} timeframes={card.timeframes} key={card.title}/>)
+      }
     </div>
   );
 }

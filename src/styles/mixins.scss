@@ -1,0 +1,3 @@
+@mixin bgSvg($bg-name) {
+    background-image: url('../../../public/images/#{$bg-name}.svg');
+}
