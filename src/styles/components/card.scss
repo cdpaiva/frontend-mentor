@@ -1,12 +1,17 @@
 .card {
     color: $text-color;
-    background-position: top -10px right 15px;
-    background-repeat: no-repeat;
-    height: 215px;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.card-top {
+    background-position: top -10px right 15px;
+    background-repeat: no-repeat;
+    height: 2.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 
 .card-exercise {
@@ -41,9 +46,9 @@
 
 .card-content {
     padding: 1rem 1.5rem;
-    height: 180px;
     background-color: $dark-blue;
-    border-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .card-upper-bar {
@@ -67,6 +72,7 @@
 .main-content {
     margin-top: 1rem;
     font-size: 3rem;
+
     @include response(375px) {
         font-size: 2rem;
     }

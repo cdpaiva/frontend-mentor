@@ -3,11 +3,16 @@
     grid-row-end: 3;
     background-color: $dark-blue;
     border-radius: 0.5rem;
+
+    @include response(375px) {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 }
 
 .overlay {
     padding: 2rem 1.5rem;
-    height: 70%;
+    // height: 70%;
     background-color: $blue;
     border-radius: 0.5rem;
     color: whitesmoke;
@@ -16,7 +21,6 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0 1rem;
     }
 }
 
@@ -47,10 +51,15 @@
 .interval-menu {
     color: $pale-blue;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     p {
-        margin-bottom: 0.75rem;
-
+        margin-bottom: 1.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
         &:hover {
             color: whitesmoke;
             font-weight: 500;
@@ -59,10 +68,11 @@
     }
 
     @include response(375px) {
-        display: flex;
+        p {
+            margin-bottom: 0;
+        }
+        flex-direction: row;
         justify-content: space-around;
-        align-items: center;
-        padding: 1rem;
     }
 }
 

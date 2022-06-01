@@ -23,7 +23,8 @@ const Card = ({ period, title, timeframes }) => {
     const formatTitle = () => title.toLowerCase().replace(' ', '-')
 
     return (
-        <div className={`card card-${formatTitle()}`}>
+        <div className='card'>
+            <div className={`card-top card-${formatTitle()}`}></div>
             <div className="card-content">
                 <div className="card-upper-bar">
                     <h4>
