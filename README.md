@@ -1,5 +1,7 @@
 # Time tracking dashboard
 
+Live version: [![Netlify Status](https://api.netlify.com/api/v1/badges/964e634a-5aac-4505-b0c7-37b8c470e70d/deploy-status)](https://lucky-nougat-bbe19b.netlify.app/)
+
 This is a front-end coding challenge from [Frontend Mentor](https://www.frontendmentor.io).
 
 The page is a dashboard, that presents information from a JSON file.
