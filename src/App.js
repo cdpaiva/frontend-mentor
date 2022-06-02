@@ -1,10 +1,10 @@
-import SideMenu from "./components/SideMenu"
-import Card from "./components/Card";
+import { useState } from 'react'
+import SideMenu from './components/SideMenu'
+import Card from './components/Card'
 import dataSource from './data.json'
-import {useState} from "react"
 
 function App() {
-  const [period, setPeriod] = useState('weekly')
+  const [period, setPeriod] = useState('weekly');
 
   return (
     <div className="grid">

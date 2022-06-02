@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const SideMenu = ({ period, setPeriod }) => {
 
     return (
@@ -16,6 +18,11 @@ const SideMenu = ({ period, setPeriod }) => {
             </div>
         </div>
     )
+}
+
+SideMenu.propTypes = {
+    period: PropTypes.string.isRequired,
+    setPeriod: PropTypes.func.isRequired
 }
 
 export default SideMenu

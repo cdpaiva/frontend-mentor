@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const Card = ({ period, title, timeframes }) => {
     const getCurrentHours = () => {
         return timeframes[period]['current']
@@ -43,6 +45,12 @@ const Card = ({ period, title, timeframes }) => {
             </div>
         </div>
     )
+}
+
+Card.propTypes = {
+    period: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    timeframes: PropTypes.object.isRequired
 }
 
 export default Card
