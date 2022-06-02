@@ -4,16 +4,22 @@ import Card from './components/Card'
 import dataSource from './data.json'
 
 function App() {
-  const [period, setPeriod] = useState('weekly');
+  const [period, setPeriod] = useState('weekly')
 
   return (
     <div className="grid">
       <SideMenu period={period} setPeriod={setPeriod}/>
       {
-        dataSource.map(card => <Card period={period} title={card.title} timeframes={card.timeframes} key={card.title}/>)
+        dataSource.map(card => 
+        <Card 
+          period={period}
+          title={card.title}
+          timeframes={card.timeframes}
+          key={card.title}
+        />)
       }
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
