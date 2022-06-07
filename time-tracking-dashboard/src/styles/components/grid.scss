@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 5%;
+
+    @include response(375px) {
+        grid-template-columns: auto;
+        grid-template-rows: minmax(0, 100%);
+    }
+}
