@@ -1,9 +1,0 @@
-@mixin bgSvg($bg-name) {
-    background-image: url('../../../public/images/#{$bg-name}.svg');
-}
-
-@mixin response($width) {
-    @media (max-width: $width) {
-        @content;
-    }
-}
