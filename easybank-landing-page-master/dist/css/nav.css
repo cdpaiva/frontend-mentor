@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: goldenrod;
+}
+
+nav ul li {
+  list-style: none;
+}
+/*# sourceMappingURL=nav.css.map */
