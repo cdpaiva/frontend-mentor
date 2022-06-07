@@ -4,6 +4,8 @@ Live version: [![Netlify Status](https://api.netlify.com/api/v1/badges/964e634a-
 
 This is a front-end coding challenge from [Frontend Mentor](https://www.frontendmentor.io).
 
+More on how this was created can be read in [my blog](https://cdpaiva.github.io/projects/react-time-tracking-dashboard.html).
+
 The page is a dashboard, that presents information from a JSON file.
 There are six categories, each one with a custom top label.
 A user profile is displayed to the left, along with the options to present the hours tracked in different periods of time.
