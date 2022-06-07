@@ -1,6 +1,6 @@
 # Easybank landing page
 
-Live version:
+Live version:[![Netlify Status](https://api.netlify.com/api/v1/badges/c1b64100-6fef-4a17-81b0-e51787d37274/deploy-status)](https://celebrated-brigadeiros-5cac17.netlify.app/)
 
 This is a front-end coding challenge from [Frontend Mentor](https://www.frontendmentor.io).
 
