@@ -26,6 +26,13 @@ section {
   margin-bottom: 1rem;
   color: hsl(0deg, 0%, 75%);
 }
+.input:focus {
+  outline: 0;
+  border: 2px solid blue;
+}
+.input:invalid {
+  border: 2px solid firebrick;
+}
 
 .cta-button {
   height: 2.5rem;
@@ -35,6 +42,10 @@ section {
   background-color: hsl(224deg, 93%, 58%);
   color: white;
   font-weight: 700;
+}
+.cta-button:hover {
+  cursor: pointer;
+  background-color: hsla(224deg, 93%, 58%, 0.65);
 }
 
 nav {
@@ -96,6 +107,21 @@ header {
   display: flex;
   flex-direction: column;
 }
+.hero .input-container input:invalid + span::before {
+  content: "Please check your email";
+  color: firebrick;
+  font-size: 0.8rem;
+  align-self: flex-start;
+}
+.hero .input-container span {
+  width: fit-content;
+}
+.hero .input-container input {
+  margin-bottom: 0;
+}
+.hero .input-container button {
+  margin-top: 1rem;
+}
 
 @media (min-width: 1440px) {
   header {
@@ -121,14 +147,26 @@ header {
     font-size: 1rem;
   }
   .hero .input-container {
+    position: relative;
     flex-direction: row;
+    align-items: center;
     gap: 1rem;
+  }
+  .hero .input-container input:invalid + span::before {
+    content: "Please check your email";
+    color: firebrick;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    font-size: 0.8rem;
+    align-self: flex-start;
   }
   .hero .input-container input {
     flex-basis: 60%;
   }
   .hero .input-container button {
     flex-basis: 40%;
+    margin: 0;
   }
 }
 .spacing-for-curved-top {
@@ -183,6 +221,9 @@ header {
   width: fit-content;
   padding-block-end: 0.25rem;
   color: hsl(170deg, 45%, 43%);
+}
+.about-content .how-it-works:hover {
+  cursor: pointer;
 }
 .about-content .testimonial-card {
   max-width: 22rem;
@@ -263,6 +304,16 @@ header {
 .start .input-container {
   max-width: min(80%, 40rem);
   margin-inline: auto;
+}
+.start .input-container input {
+  margin-bottom: 0;
+}
+.start .input-container input:invalid + span::before {
+  content: "Please check your email";
+  font-size: 0.8rem;
+}
+.start .input-container button {
+  margin-top: 1rem;
 }
 
 @media (min-width: 1440px) {

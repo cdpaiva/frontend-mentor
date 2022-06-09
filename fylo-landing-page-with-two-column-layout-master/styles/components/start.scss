@@ -18,6 +18,19 @@
     .input-container {
         max-width: min(80%, 40rem);
         margin-inline: auto;
+
+        input {
+            margin-bottom: 0;
+        }
+
+        input:invalid + span::before {
+            content:"Please check your email";
+            font-size: 0.8rem;
+        }
+
+        button {
+            margin-top: 1rem;
+        }
     }
 }
 

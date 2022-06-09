@@ -60,6 +60,10 @@
             }
 
             border-bottom: 2px solid $moderateCyan;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         .testimonial-card {

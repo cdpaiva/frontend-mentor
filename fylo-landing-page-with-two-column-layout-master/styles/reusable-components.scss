@@ -7,6 +7,15 @@
     padding-inline-start: 1rem;
     margin-bottom: 1rem;
     color: $lightGray;
+
+    &:focus {
+        outline: 0;
+        border: 2px solid blue;
+    }
+
+    &:invalid {
+        border: 2px solid firebrick;
+    }
 }
 
 .cta-button {
@@ -17,4 +26,9 @@
     background-color: $brightBlue;
     color: white;
     font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+        background-color: hsla(224, 93%, 58%,65%);
+    }
 }
