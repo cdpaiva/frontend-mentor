@@ -5,6 +5,9 @@ header {
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
+
     img {
         max-width: 100%;
     }
@@ -16,7 +19,6 @@ header {
     &-title {
         font-weight: 700;
         font-size: 1.4rem;
-        font-family: $primaryFont;
         padding-block: 2rem;
     }
 
@@ -26,5 +28,49 @@ header {
         padding-block-end: 2rem;
     }
 
-    
+    .input-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:$desktop) {
+    header {
+        padding-inline: 4rem;
+    }
+    .hero {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        img {
+            flex-basis: 55%;
+            width:45%;
+        }
+
+        &-content {
+            flex-basis: 40%;
+            text-align: left;
+        }
+
+        &-title {
+            font-size: 2.2rem;
+        }
+
+        &-text {
+            font-size: 1rem;
+        }
+
+        .input-container {
+            flex-direction: row;
+            gap: 1rem;
+
+            input {
+                flex-basis: 60%;
+            }
+
+            button {
+                flex-basis: 40%;
+            }
+        }
+    }
 }

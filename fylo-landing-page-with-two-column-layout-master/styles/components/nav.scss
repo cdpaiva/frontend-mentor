@@ -6,7 +6,7 @@ nav {
     padding-inline: 1.5rem;
 
     img {
-        max-width: min(8rem,25%);
+        max-width: min(8rem, 25%);
     }
 
     ul {
@@ -15,6 +15,21 @@ nav {
 
         li {
             font-size: 0.85rem;
+        }
+    }
+}
+
+@media (min-width:$desktop) {
+    nav {
+        padding-block: 3rem;
+        padding-inline: 4rem;
+
+        ul {
+            gap: 3rem;
+
+            li {
+                font-size: 1rem;
+            }
         }
     }
 }

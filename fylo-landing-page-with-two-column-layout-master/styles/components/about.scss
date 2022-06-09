@@ -5,83 +5,133 @@
     background-position: bottom;
 }
 
+@media(min-width:$desktop) {
+    .spacing-for-curved-top {
+        height: 13rem;
+        background-image: url(/images/bg-curve-desktop.svg);
+        background-size: 100%;
+        background-position: 50% 7rem;
+    }
+}
+
 .about {
     background-color: $lightGrayishBlue;
     padding-inline: 1.5rem;
     padding-block-end: 5rem;
-    
+    display: flex;
+    flex-direction: column;
+
     .illustration {
         padding-block: 2rem;
         max-width: 100%;
-    }
-    
-    h3 {
-        padding-block: 2rem;
-        font-size: 1rem;
-        text-align: center;
     }
 
     &-text-content {
         padding-block-end: 1rem;
         color: $desaturatedBlue;
         font-size: 0.9rem;
+        max-width: 30rem;
     }
 
-    .flex-container {
-        display: flex;
-        justify-content: center;
-        padding-block: 1em;
-    }
-    .how-it-works {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        p {
-            width: fit-content;
-            padding-block-end: 0.25rem;
-            color: $moderateCyan;
+    &-content {
+
+        h3 {
+            padding-block: 2rem;
+            font-size: 1rem;
+            text-align: center;
         }
-        border-bottom: 2px solid $moderateCyan;
-    }
-
-    .testimonial-card {
-        width: 90%;
-        margin-inline: auto;
-        margin-block-start: 2rem;
-        background-color: white;
-        border-radius: 0.5rem;
-        box-shadow: 0 0 0.5rem $lightGray;
-        padding-block: 1rem;
-        padding-inline-start: 1.5rem;
-        padding-inline-end: 0.75rem;
-
-        &-text {
-            font-size: 0.72rem;
-            line-height: 1.5rem;
-            font-family: $primaryFont;
+        
+        
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            padding-block: 1em;
         }
-
-        &-profile {
+        
+        .how-it-works {
             display: flex;
             align-items: center;
-            padding-block: 1rem;
             gap: 0.5rem;
+            
+            p {
+                width: fit-content;
+                padding-block-end: 0.25rem;
+                color: $moderateCyan;
+            }
+
+            border-bottom: 2px solid $moderateCyan;
         }
 
-        &-avatar {
-            border-radius: 50%;
-            width: 15%;
-        }
+        .testimonial-card {
+            max-width: 22rem;
+            margin-inline: auto;
+            margin-block-start: 2rem;
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 0.5rem $lightGray;
+            padding-block: 1rem;
+            padding-inline-start: 1.5rem;
+            padding-inline-end: 0.75rem;
 
-        &-name {
-            font-weight: 700;
-            font-size: 0.8rem;
-            padding-block-end:0.25rem;
-            color: black;
-        }
+            &-text {
+                font-size: 0.72rem;
+                line-height: 1.5rem;
+                font-family: $primaryFont;
+            }
 
-        &-title {
-            font-size: 0.6rem;
+            &-profile {
+                display: flex;
+                align-items: center;
+                padding-block: 1rem;
+                gap: 0.5rem;
+            }
+
+            &-avatar {
+                border-radius: 50%;
+                width: 15%;
+            }
+
+            &-name {
+                font-weight: 700;
+                font-size: 0.8rem;
+                padding-block-end: 0.25rem;
+                color: black;
+            }
+
+            &-title {
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+}
+@media(min-width:$desktop){
+    .about {
+        padding-inline: 4rem;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+        .illustration {
+            flex-basis: 50%;
+            width: 40%;
+        }
+        
+        &-content {
+            flex-basis: 45%;
+
+            h3 {
+                text-align: left;
+                font-size: 2.2rem;
+            }
+
+            .flex-container {
+                justify-content: start;
+            }
+
+            .testimonial-card {
+                margin-inline:0;
+            }
         }
     }
 }

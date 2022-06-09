@@ -55,11 +55,27 @@ nav ul li {
   font-size: 0.85rem;
 }
 
+@media (min-width: 1440px) {
+  nav {
+    padding-block: 3rem;
+    padding-inline: 4rem;
+  }
+  nav ul {
+    gap: 3rem;
+  }
+  nav ul li {
+    font-size: 1rem;
+  }
+}
 header {
   padding-block: 4rem;
   padding-inline: 2rem;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+}
 .hero img {
   max-width: 100%;
 }
@@ -69,7 +85,6 @@ header {
 .hero-title {
   font-weight: 700;
   font-size: 1.4rem;
-  font-family: "Open sans", sans-serif;
   padding-block: 2rem;
 }
 .hero-text {
@@ -77,7 +92,45 @@ header {
   font-size: 0.9rem;
   padding-block-end: 2rem;
 }
+.hero .input-container {
+  display: flex;
+  flex-direction: column;
+}
 
+@media (min-width: 1440px) {
+  header {
+    padding-inline: 4rem;
+  }
+
+  .hero {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .hero img {
+    flex-basis: 55%;
+    width: 45%;
+  }
+  .hero-content {
+    flex-basis: 40%;
+    text-align: left;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-text {
+    font-size: 1rem;
+  }
+  .hero .input-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .hero .input-container input {
+    flex-basis: 60%;
+  }
+  .hero .input-container button {
+    flex-basis: 40%;
+  }
+}
 .spacing-for-curved-top {
   height: 5rem;
   background-image: url(/images/bg-curve-mobile.svg);
@@ -85,43 +138,54 @@ header {
   background-position: bottom;
 }
 
+@media (min-width: 1440px) {
+  .spacing-for-curved-top {
+    height: 13rem;
+    background-image: url(/images/bg-curve-desktop.svg);
+    background-size: 100%;
+    background-position: 50% 7rem;
+  }
+}
 .about {
   background-color: hsl(240deg, 75%, 98%);
   padding-inline: 1.5rem;
   padding-block-end: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 .about .illustration {
   padding-block: 2rem;
   max-width: 100%;
 }
-.about h3 {
-  padding-block: 2rem;
-  font-size: 1rem;
-  text-align: center;
-}
 .about-text-content {
   padding-block-end: 1rem;
   color: hsl(238deg, 22%, 44%);
   font-size: 0.9rem;
+  max-width: 30rem;
 }
-.about .flex-container {
+.about-content h3 {
+  padding-block: 2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.about-content .flex-container {
   display: flex;
   justify-content: center;
   padding-block: 1em;
 }
-.about .how-it-works {
+.about-content .how-it-works {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   border-bottom: 2px solid hsl(170deg, 45%, 43%);
 }
-.about .how-it-works p {
+.about-content .how-it-works p {
   width: fit-content;
   padding-block-end: 0.25rem;
   color: hsl(170deg, 45%, 43%);
 }
-.about .testimonial-card {
-  width: 90%;
+.about-content .testimonial-card {
+  max-width: 22rem;
   margin-inline: auto;
   margin-block-start: 2rem;
   background-color: white;
@@ -131,32 +195,59 @@ header {
   padding-inline-start: 1.5rem;
   padding-inline-end: 0.75rem;
 }
-.about .testimonial-card-text {
+.about-content .testimonial-card-text {
   font-size: 0.72rem;
   line-height: 1.5rem;
   font-family: "Open sans", sans-serif;
 }
-.about .testimonial-card-profile {
+.about-content .testimonial-card-profile {
   display: flex;
   align-items: center;
   padding-block: 1rem;
   gap: 0.5rem;
 }
-.about .testimonial-card-avatar {
+.about-content .testimonial-card-avatar {
   border-radius: 50%;
   width: 15%;
 }
-.about .testimonial-card-name {
+.about-content .testimonial-card-name {
   font-weight: 700;
   font-size: 0.8rem;
   padding-block-end: 0.25rem;
   color: black;
 }
-.about .testimonial-card-title {
+.about-content .testimonial-card-title {
   font-size: 0.6rem;
 }
 
+@media (min-width: 1440px) {
+  .about {
+    padding-inline: 4rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .about .illustration {
+    flex-basis: 50%;
+    width: 40%;
+  }
+  .about-content {
+    flex-basis: 45%;
+  }
+  .about-content h3 {
+    text-align: left;
+    font-size: 2.2rem;
+  }
+  .about-content .flex-container {
+    justify-content: start;
+  }
+  .about-content .testimonial-card {
+    margin-inline: 0;
+  }
+}
 .start {
+  display: flex;
+  flex-direction: column;
   padding-block: 4rem;
   padding-inline: 1.75rem;
   background-color: hsl(238deg, 22%, 44%);
@@ -166,11 +257,37 @@ header {
 .start-text {
   padding-block: 2rem;
 }
-.start .spacing-container {
-  width: 80%;
+.start-content {
+  max-width: 32rem;
+}
+.start .input-container {
+  max-width: min(80%, 40rem);
   margin-inline: auto;
 }
 
+@media (min-width: 1440px) {
+  .start {
+    padding-inline: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .start-content {
+    text-align: left;
+    flex-basis: 45%;
+  }
+  .start-title {
+    font-size: 1.5rem;
+  }
+  .start .input-container {
+    margin: 0;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  .start .input-container .cta-button {
+    width: 10rem;
+  }
+}
 footer {
   padding-block-start: 4rem;
   padding-block-end: 2rem;
@@ -178,6 +295,8 @@ footer {
   background-color: hsl(243deg, 87%, 12%);
   color: white;
   font-family: "Open sans", sans-serif;
+}
+footer .flex-container {
   display: flex;
   flex-direction: column;
 }
@@ -188,7 +307,7 @@ footer ul li {
   padding-bottom: 1rem;
 }
 footer .logo {
-  width: 50%;
+  max-width: 10rem;
 }
 footer .icon-and-info-container {
   display: flex;
@@ -200,6 +319,18 @@ footer .social-media-icons {
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
+}
+
+@media (min-width: 1440px) {
+  footer {
+    padding-inline: 4rem;
+  }
+  footer .flex-container {
+    width: 80%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

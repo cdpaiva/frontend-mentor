@@ -6,8 +6,10 @@ footer {
     color: white;
     font-family: $primaryFont;
 
-    display: flex;
-    flex-direction: column;
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
 
     div {
         padding-block: 1rem;
@@ -18,7 +20,7 @@ footer {
     }
 
     .logo {
-        width: 50%;
+        max-width: 10rem;
     }
 
     .icon-and-info-container {
@@ -32,5 +34,18 @@ footer {
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
+    }
+}
+
+@media(min-width:$desktop) {
+    footer {
+        padding-inline: 4rem;
+
+        .flex-container {
+            width: 80%;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
     }
 }

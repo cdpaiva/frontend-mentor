@@ -1,4 +1,6 @@
 .start {
+    display: flex;
+    flex-direction: column;
     padding-block: 4rem;
     padding-inline: 1.75rem;
     background-color: $desaturatedBlue;
@@ -9,8 +11,40 @@
         padding-block: 2rem;
     }
 
-    .spacing-container {
-        width: 80%;
+    &-content {
+        max-width: 32rem;
+    }
+
+    .input-container {
+        max-width: min(80%, 40rem);
         margin-inline: auto;
+    }
+}
+
+@media(min-width:$desktop) {
+    .start {
+        padding-inline: 4rem;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-content {
+            text-align: left;
+            flex-basis: 45%;
+        }
+
+        &-title {
+            font-size: 1.5rem;
+        }
+
+        .input-container {
+            margin: 0;
+            flex-basis: 40%;
+            display: flex;
+            flex-direction: column;
+
+            .cta-button {
+                width: 10rem;
+            }
+        }
     }
 }
