@@ -1,0 +1,16 @@
+.start {
+    padding-block: 4rem;
+    padding-inline: 1.75rem;
+    background-color: $desaturatedBlue;
+    color: white;
+    text-align: center;
+
+    &-text {
+        padding-block: 2rem;
+    }
+
+    .spacing-container {
+        width: 80%;
+        margin-inline: auto;
+    }
+}

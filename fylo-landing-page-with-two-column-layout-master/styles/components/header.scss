@@ -1,0 +1,30 @@
+header {
+    padding-block: 4rem;
+    padding-inline: 2rem;
+
+}
+
+.hero {
+    img {
+        max-width: 100%;
+    }
+
+    &-content {
+        text-align: center;
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 1.4rem;
+        font-family: $primaryFont;
+        padding-block: 2rem;
+    }
+
+    &-text {
+        font-family: $primaryFont;
+        font-size:0.9rem;
+        padding-block-end: 2rem;
+    }
+
+    
+}

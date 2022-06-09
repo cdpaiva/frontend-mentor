@@ -1,0 +1,27 @@
+//Screen sizes
+$mobile: 375px;
+$desktop: 1440px;
+
+//Colors
+
+//Primary
+$veryDarkBlue: hsl(243, 87%, 12%);
+$desaturatedBlue: hsl(238, 22%, 44%);
+
+//Accent
+$brightBlue: hsl(224, 93%, 58%);
+$moderateCyan: hsl(170, 45%, 43%);
+
+//Neutral
+$lightGrayishBlue: hsl(240, 75%, 98%);
+$lightGray: hsl(0, 0%, 75%);
+
+//Typography
+
+//Headings, Call-to-actions, Header Navigation
+//Use with weights: 400, 700
+$accentFont: 'Raleway', sans-serif;
+
+//Body
+//Use with weight: 400
+$primaryFont: 'Open sans', sans-serif;

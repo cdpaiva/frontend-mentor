@@ -1,0 +1,36 @@
+footer {
+    padding-block-start: 4rem;
+    padding-block-end: 2rem;
+    padding-inline: 2rem;
+    background-color: $veryDarkBlue;
+    color: white;
+    font-family: $primaryFont;
+
+    display: flex;
+    flex-direction: column;
+
+    div {
+        padding-block: 1rem;
+    }
+
+    ul li {
+        padding-bottom: 1rem;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .icon-and-info-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .social-media-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,87 @@
+.spacing-for-curved-top {
+    height: 5rem;
+    background-image: url(/images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.about {
+    background-color: $lightGrayishBlue;
+    padding-inline: 1.5rem;
+    padding-block-end: 5rem;
+    
+    .illustration {
+        padding-block: 2rem;
+        max-width: 100%;
+    }
+    
+    h3 {
+        padding-block: 2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    &-text-content {
+        padding-block-end: 1rem;
+        color: $desaturatedBlue;
+        font-size: 0.9rem;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        padding-block: 1em;
+    }
+    .how-it-works {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        p {
+            width: fit-content;
+            padding-block-end: 0.25rem;
+            color: $moderateCyan;
+        }
+        border-bottom: 2px solid $moderateCyan;
+    }
+
+    .testimonial-card {
+        width: 90%;
+        margin-inline: auto;
+        margin-block-start: 2rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.5rem $lightGray;
+        padding-block: 1rem;
+        padding-inline-start: 1.5rem;
+        padding-inline-end: 0.75rem;
+
+        &-text {
+            font-size: 0.72rem;
+            line-height: 1.5rem;
+            font-family: $primaryFont;
+        }
+
+        &-profile {
+            display: flex;
+            align-items: center;
+            padding-block: 1rem;
+            gap: 0.5rem;
+        }
+
+        &-avatar {
+            border-radius: 50%;
+            width: 15%;
+        }
+
+        &-name {
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding-block-end:0.25rem;
+            color: black;
+        }
+
+        &-title {
+            font-size: 0.6rem;
+        }
+    }
+}

@@ -3,3 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+ul li {
+    list-style: none;
+}
+
+header, nav, h1,h3 {
+    font-family: $accentFont;
+}
+
+section {
+    font-family: $primaryFont;
+}

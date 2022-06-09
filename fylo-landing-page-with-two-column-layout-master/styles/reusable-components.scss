@@ -1,0 +1,20 @@
+.input {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 2px solid $lightGray;
+    display: block;
+    padding-inline-start: 1rem;
+    margin-bottom: 1rem;
+    color: $lightGray;
+}
+
+.cta-button {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: $brightBlue;
+    color: white;
+    font-weight: 700;
+}
