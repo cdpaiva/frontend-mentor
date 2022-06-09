@@ -1,15 +1,15 @@
-const menu = document.querySelector(".menu-items")
+const menu = document.querySelector(".menu")
 const hamburger = document.querySelector(".hamburger")
-const openMenu = document.querySelector(".openMenu")
-const closeMenu = document.querySelector(".closeMenu")
+const openMenu = document.querySelector(".open-menu")
+const closeMenu = document.querySelector(".close-menu")
 
 function toggleMenu() {
-    if(menu.classList.contains("showMenu")) {
-        menu.classList.remove("showMenu")
+    if(menu.classList.contains("show-menu")) {
+        menu.classList.remove("show-menu")
         openMenu.style.display = "block"
         closeMenu.style.display = "none"
     } else {
-        menu.classList.add("showMenu")
+        menu.classList.add("show-menu")
         openMenu.style.display = "none"
         closeMenu.style.display = "block"
     }

@@ -1,0 +1,27 @@
+.bg-light-grayish-blue {
+    background-color: $lightGrayishBlue;
+}
+
+.choose-intro {
+    color: $grayishBlue;
+}
+
+.card {
+    padding-block: 1rem;
+
+    &__title {
+        font-weight: 400;
+        padding-block: 1rem;
+    }
+
+    p {
+        color: $grayishBlue;
+    }
+}
+
+@media(min-width: 1440px) {
+    .choose-intro {
+        width: 50%;
+        padding-bottom: 2rem;
+    }
+}

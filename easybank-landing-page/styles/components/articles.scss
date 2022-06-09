@@ -1,0 +1,33 @@
+.articles {
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+}
+
+.article {
+
+    background-color: $white;
+    border-radius: 0.5rem;
+
+    img {
+        max-width: min(100%,30rem);
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+
+    &__content {
+        text-align: justify;
+        padding-inline: 2rem;
+        padding-block: 1.5rem;
+    }
+
+    &__author {
+        font-size: 0.75rem;
+        color: $grayishBlue;
+    }
+
+    &__fragment {
+        color: $grayishBlue;
+    }
+}

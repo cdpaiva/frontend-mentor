@@ -1,0 +1,37 @@
+.container {
+    width: 90%;
+    margin-inline: auto;
+
+    text-align: center;
+
+    h2 {
+        font-weight: 300;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        line-height: 1.5rem;
+    }
+
+}
+
+.flex-container {
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 85%;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        * {
+            flex-basis: 100%;
+        }
+    }
+}
