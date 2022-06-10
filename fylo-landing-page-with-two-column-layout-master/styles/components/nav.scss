@@ -6,7 +6,11 @@ nav {
     padding-inline: 1.5rem;
 
     a {
-        max-width: min(8rem, 25%);
+        max-width: min(12rem, 25%);
+    }
+
+    a img {
+        max-width: 100%;
     }
 
     ul {
@@ -27,7 +31,7 @@ nav {
         ul {
             gap: 3rem;
 
-            li {
+            li a {
                 font-size: 1rem;
             }
         }

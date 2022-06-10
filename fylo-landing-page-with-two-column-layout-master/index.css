@@ -63,7 +63,10 @@ nav {
   padding-inline: 1.5rem;
 }
 nav a {
-  max-width: min(8rem, 25%);
+  max-width: min(12rem, 25%);
+}
+nav a img {
+  max-width: 100%;
 }
 nav ul {
   display: flex;
@@ -81,7 +84,7 @@ nav ul li a {
   nav ul {
     gap: 3rem;
   }
-  nav ul li {
+  nav ul li a {
     font-size: 1rem;
   }
 }
