@@ -16,16 +16,20 @@
     }
 
     .input-container {
-        max-width: min(80%, 40rem);
-        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
 
         input {
             margin-bottom: 0;
         }
 
-        input:invalid + span::before {
-            content:"Please check your email";
+        input:invalid+span::before {
+            content: "Please check your email";
             font-size: 0.8rem;
+        }
+
+        span {
+            align-self: flex-start;
         }
 
         button {
@@ -50,13 +54,11 @@
         }
 
         .input-container {
-            margin: 0;
             flex-basis: 40%;
-            display: flex;
-            flex-direction: column;
 
             .cta-button {
-                width: 10rem;
+                max-width: 12rem;
+                height: 3rem;
             }
         }
     }

@@ -7,6 +7,13 @@
 ul li {
   list-style: none;
 }
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+ul li a:hover {
+  color: hsl(224deg, 93%, 58%);
+}
 
 header, nav, h1, h3 {
   font-family: "Raleway", sans-serif;
@@ -55,14 +62,14 @@ nav {
   padding-block: 2rem;
   padding-inline: 1.5rem;
 }
-nav img {
+nav a {
   max-width: min(8rem, 25%);
 }
 nav ul {
   display: flex;
   gap: 1.5rem;
 }
-nav ul li {
+nav ul li a {
   font-size: 0.85rem;
 }
 
@@ -153,13 +160,9 @@ header {
     gap: 1rem;
   }
   .hero .input-container input:invalid + span::before {
-    content: "Please check your email";
-    color: firebrick;
     position: absolute;
     top: 3rem;
     left: 0;
-    font-size: 0.8rem;
-    align-self: flex-start;
   }
   .hero .input-container input {
     flex-basis: 60%;
@@ -302,8 +305,8 @@ header {
   max-width: 32rem;
 }
 .start .input-container {
-  max-width: min(80%, 40rem);
-  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
 }
 .start .input-container input {
   margin-bottom: 0;
@@ -311,6 +314,9 @@ header {
 .start .input-container input:invalid + span::before {
   content: "Please check your email";
   font-size: 0.8rem;
+}
+.start .input-container span {
+  align-self: flex-start;
 }
 .start .input-container button {
   margin-top: 1rem;
@@ -330,13 +336,11 @@ header {
     font-size: 1.5rem;
   }
   .start .input-container {
-    margin: 0;
     flex-basis: 40%;
-    display: flex;
-    flex-direction: column;
   }
   .start .input-container .cta-button {
-    width: 10rem;
+    max-width: 12rem;
+    height: 3rem;
   }
 }
 footer {
@@ -367,7 +371,6 @@ footer .icon-and-info-container {
 }
 footer .social-media-icons {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 1rem;
 }
@@ -377,7 +380,7 @@ footer .social-media-icons {
     padding-inline: 4rem;
   }
   footer .flex-container {
-    width: 80%;
+    max-width: 80%;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;

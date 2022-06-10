@@ -5,7 +5,7 @@ nav {
     padding-block: 2rem;
     padding-inline: 1.5rem;
 
-    img {
+    a {
         max-width: min(8rem, 25%);
     }
 
@@ -13,7 +13,7 @@ nav {
         display: flex;
         gap: 1.5rem;
 
-        li {
+        li a {
             font-size: 0.85rem;
         }
     }
